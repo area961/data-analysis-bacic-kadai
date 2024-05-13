@@ -12,3 +12,6 @@ elif var % 3 == 0:
 
 elif var % 5 == 0:
   print(Buzz)
+
+else:
+  print(var)
