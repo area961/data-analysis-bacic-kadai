@@ -1,7 +1,9 @@
-# 商品の金額に税率をかける関数を定義する
-def calculate_total(price, tax):
-  total = price * tax
-  return total
-  print(f"{total}円")
+def calculate_total_price(price, tax_rate=0.10):
+    tax_amount = price * tax_rate
+    total_price = price + tax_amount
+    return total_price
 
-calculate_total(100, 1.1)
+price = 100  # 商品の金額
+tax_rate = 0.10  # 消費税率（10%）
+total = calculate_total_price(price, tax_rate)
+print(f"消費税を含む合計金額: {total}円")
