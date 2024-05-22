@@ -3,11 +3,11 @@ class Human:
         self.name = name
         self.age = age
 
-    def print(self):
+    def printinfo(self):
         print(f"Name: {self.name}, Age: {self.age}")
 
 # Humanクラスのインスタンスを作成
-person = Human("Alice", 30)
+person = Human("侍太郎", 31)
 
 # printinfoメソッドを呼び出して属性を表示
-person.print()
+person.printinfo()
